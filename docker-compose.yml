@@ -1,1 +1,14 @@
 version: "3"
+
+networks:
+    WEBHOSTING:
+
+services:
+    httpd:
+
+
+  mariadb:
+
+
+
+     php:
