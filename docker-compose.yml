@@ -5,10 +5,11 @@ networks:
 
 services:
     httpd:
-
+    image: ''
 
   mariadb:
-
+    image: ''
 
 
      php:
+   image: ''
