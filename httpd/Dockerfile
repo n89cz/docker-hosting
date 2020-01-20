@@ -1,11 +1,14 @@
-FROM alpine:base
+FROM alpine-base
 
-RUN apk add --update \
-    bash \
-    iptables \
-    mc \
-    apache2 \
-    && rm -rf /var/cache/apk/*
+#Added to base image:
+#RUN apk add --update \
+#    bash \
+#    iptables \
+#    mc \
+#    apache2 \
+#    && rm -rf /var/cache/apk/*
+
+RUN apk add apache2
 
 RUN mkdir -p /data/web/httpd/conf
 

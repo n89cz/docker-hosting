@@ -1,12 +1,14 @@
 FROM alpine:latest
 
-RUN apk add --update \
+RUN apk --update add \
     bash \
     iptables \
     mc \
     gcc \
     make \
-    +gg \
-    zlib-devel \
+    g++ \
+    zlib-dev \
     && rm -rf /var/cache/apk/*
 
+
+#apk --update add gcc make g++ zlib-dev
