@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build . -f Dockerfile --tag alpine-base
+docker build . -f Dockerfile --tag hosting-base

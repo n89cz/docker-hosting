@@ -1,4 +1,4 @@
-FROM alpine-base
+FROM hosting-base
 
 #Added to base image:
 #RUN apk add --update \

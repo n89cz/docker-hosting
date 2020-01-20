@@ -7,4 +7,4 @@ docker run \
         -itd \
         --restart unless-stopped \
         --network host \
-        --name base alpine-base
+        --name hosting-base hosting-base
