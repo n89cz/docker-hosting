@@ -6,3 +6,5 @@ RUN apk add --update \
     mc \
     apache2
     && rm -rf /var/cache/apk/*
+
+COPY conf/entrypoint.sh /data/
