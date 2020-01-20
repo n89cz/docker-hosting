@@ -7,4 +7,4 @@ docker run \
         -itd \
         --restart unless-stopped \
         --network host \
-        --name ovpn httpd
+        --name httpd httpd
