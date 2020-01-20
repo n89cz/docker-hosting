@@ -7,9 +7,9 @@ RUN apk add --update \
     apache2 \
     && rm -rf /var/cache/apk/*
 
-RUN mkdir -p /data/web/config
+RUN mkdir -p /data/web/httpd/conf
 
 COPY conf/entrypoint.sh /data/
-COPY conf/httpd.conf /data/web/config
+COPY conf/httpd.conf /data/web/httpd/conf
 
 #ENTRYPOINT ["data/entrypoint.sh"]
