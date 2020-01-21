@@ -3,18 +3,18 @@ version: "3"
 networks:
     frontend:
     backend:
-    
+
 services:
     httpd:
-    image: 'httpd'
-    networks:
-	- frontend
-	- backend
+	image: 'httpd'
+	networks:
+	    - frontend
+	    - backend
 
-  mariadb:
-    image: 'mariadb'
-    networks:
-	- backend
+    mariadb:
+	image: 'mariadb'
+	networks:
+	    - backend
 
 
      php:
