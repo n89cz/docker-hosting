@@ -6,11 +6,18 @@ networks:
     
 services:
     httpd:
-    image: ''
+    image: 'httpd'
+    networks:
+	- frontend
+	- backend
 
   mariadb:
-    image: ''
+    image: 'mariadb'
+    networks:
+	- backend
 
 
      php:
-   image: ''
+	image: 'php-fpm'
+	networks:
+	    - backend
